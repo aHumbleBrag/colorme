@@ -1,0 +1,30 @@
+<html>
+<HEAD>
+	<title> Color App </title>
+	<style>
+	*{font-size :50 px; }
+	body {background-color: azure:;}
+	</style>
+</HEAD>
+
+<body>
+<center>
+
+	<h1> HOLI! </h1>
+	<form onsubmit="colorme()">
+		<input type="submit" value="Color me!" />
+	</form>
+	
+	<script>
+	{
+	event.preventDefault();
+	let colors = ["Red", "Blue", "Green", "Yellow", "Purple", "Orange", "Pink", "Brown", "Gray", "Black", "White", "Cyan", "Magenta", "Lime", "Teal", "Indigo", "Turquoise", "Maroon", "Navy", "Olive"]	
+	let r = parseInt(Math.random() * colors.length);
+	document.body.style.background = colors[r];
+	}
+
+	</script>
+
+</center>
+</body>
+</HTML>
